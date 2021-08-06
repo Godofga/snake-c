@@ -65,7 +65,8 @@ int main(){
 		foi_possivel_rastejar = rastejar(&snake,campo);
 		
 		if(foi_possivel_rastejar==-1){
-			printf("\nA cobrinha faleceu :c");
+			//O \a faz um barulhinho
+			printf("\a\nA cobrinha faleceu :c");
 			return 0;
 		}else if(foi_possivel_rastejar==1){
 			printf("\nVoce venceu :o");
