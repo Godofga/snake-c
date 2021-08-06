@@ -55,7 +55,7 @@ int main(){
 	inicializarJogo(&snake, campo);
 	
 	mostrarCampo(campo);
-	printf("Aperte qualquer tecla para iniciar!\nVoce controla a cobrinha com as setinhas do teclado!");
+	printf("\nAperte qualquer tecla para iniciar!\nVoce controla a cobrinha com as setinhas do teclado!");
 	getch();
 	getch();
 	
@@ -66,7 +66,7 @@ int main(){
 		
 		if(foi_possivel_rastejar==-1){
 			//O \a faz um barulhinho
-			printf("\a\nA cobrinha faleceu :c");
+			printf("\a\nA cobrinha faleceu :c\nPontuacao: %d", snake.tamanho);
 			return 0;
 		}else if(foi_possivel_rastejar==1){
 			printf("\nVoce venceu :o");
